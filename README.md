@@ -18,5 +18,6 @@ bash <(curl -sSL https://raw.gitmirror.com/instantbox/instantbox/master/init.sh)
 ```
 国外机
 ```bash
+mkdir instantbox && cd instantbox
 bash <(curl -sSL https://raw.githubusercontent.com/instantbox/instantbox/master/init.sh)
 ```
