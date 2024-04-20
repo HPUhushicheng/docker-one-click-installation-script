@@ -5,7 +5,7 @@
 #
 # Usage:
 #  mkdir instantbox && cd $_
-#  bash <(curl -sSL https://raw.githubusercontent.com/instantbox/instantbox/master/init.sh)"
+#  bash <(curl -sSL https://raw.gitmirror.com/instantbox/instantbox/master/init.sh)"
 #  docker-compose up -d
 #
 
@@ -26,11 +26,11 @@ fi
 if check_cmd docker-compose; then
     echo "docker-compose is installed"
 else
-    curl -sSL https://raw.githubusercontent.com/docker/compose/master/script/run/run.sh > /usr/local/bin/docker-compose
+    curl -sSL https://raw.gitmirror.com/docker/compose/master/script/run/run.sh > /usr/local/bin/docker-compose
     chmod +x /usr/local/bin/docker-compose || exit 1
 fi
 
-curl -sSLO https://raw.githubusercontent.com/instantbox/instantbox/master/docker-compose.yml
+curl -sSLO https://raw.gitmirror.com/instantbox/instantbox/master/docker-compose.yml
 
 echo "Enter your IP (optional): "
 read IP
