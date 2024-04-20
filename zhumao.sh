@@ -301,6 +301,7 @@ updateSystem() {
 installDocker(){
     echoContent yellow " ---> 安装docker"
     curl -fsSL https://get.docker.com | sh
+    curl -fsSL https://docker.mirrors.ustc.edu.cn | sh
     
 
     echoContent yellow " ---> 安装docker-compose"
